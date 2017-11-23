@@ -3,6 +3,8 @@ Azure DC IP Ranges parser.
 
 This tool downloads the latest XML file from [https://www.microsoft.com/en-us/download/confirmation.aspx?id=41653](https://www.microsoft.com/en-us/download/confirmation.aspx?id=41653) and returns valid JSON output.
 
+Check the source code to easily change the above for China's region ranges.
+
 ## Disclaimer
 THIS IS PROVIDED AS-IS. IT MIGHT STOP WORKING AT ANY POINT IN TIME WITHOUT PREVIOUS NOTICE.    
 THIS IS NOT OFFICIAL MICROSOFT SOFTWARE. THIS IS THE WORK OF AN INDIVIDUAL ON THEIR SPARE TIME.

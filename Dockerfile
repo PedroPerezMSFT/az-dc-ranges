@@ -7,7 +7,7 @@ RUN cd ~
 RUN git clone https://github.com/PedroPerezMSFT/az-dc-ranges /root/az-dc-ranges
 RUN go get golang.org/x/net/html
 RUN go build -o /run/azdcparser /root/az-dc-ranges/main.go 
-RUN apk del openssl git go musl-dev
+RUN apk del openssl git go musl-dev --purge
 RUN rm -rf /root/az-dc-ranges
 
 ENTRYPOINT ["/run/azdcparser"]

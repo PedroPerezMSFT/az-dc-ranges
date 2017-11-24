@@ -44,8 +44,7 @@ func findLink(resp *http.Response) string {
 		case tt == html.StartTagToken:
 			t := z.Token()
 
-			isAnchor := t.Data == "a"
-			if isAnchor {
+			if t.Data == "a" {
 				for _, a := range t.Attr {
 					if a.Key == "href" {
 						if a.Val[len(a.Val)-3:] == "xml" {

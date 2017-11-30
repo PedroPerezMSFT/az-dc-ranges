@@ -87,6 +87,6 @@ func main() {
 
 	azurepublicipaddresses := parseXML(link)
 
-	muhJSON, _ := json.Marshal(azurepublicipaddresses)
+	muhJSON, _ := json.MarshalIndent(azurepublicipaddresses, "", " ")
 	fmt.Printf("%+v\n", string(muhJSON))
 }
